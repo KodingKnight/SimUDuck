@@ -2,8 +2,16 @@ package edu.clarkson.bruskajp.ee365.simuduck.ducks;
 
 public abstract class Duck {
 	
-	private boolean duckPostFlight = false;
+	private boolean flying = false;
 	
+	public boolean isFlying() {
+		return flying;
+	}
+	
+	public void setFlying(boolean flying) {
+		this.flying = flying;
+	}
+
 	public abstract void display();
 	
 	public void quack(){
@@ -13,13 +21,9 @@ public abstract class Duck {
 		System.out.println("WADDLE WADDLE!");
 	}
 	
-	public void fly() {
+	public void fly(){
 		System.out.println("I am flying!");
-		duckPostFlight = true;
-	}
-	
-	public boolean isFlying() {
-		return duckPostFlight;
+		this.setFlying(true);
 	}
 	
 }
