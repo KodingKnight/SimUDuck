@@ -14,16 +14,8 @@ public abstract class Duck {
 
 	public abstract void display();
 	
-	public void quack(){
-		System.out.println("QUAAAACK!");
-	}
 	public void swim(){
 		System.out.println("WADDLE WADDLE!");
-	}
-	
-	public void fly(){
-		System.out.println("I am flying!");
-		this.setFlying(true);
 	}
 	
 }

@@ -4,14 +4,14 @@ public class DuckTester {
 	
 	public void runTheTest(){
 		Duck mallardDuck = new MallardDuck();
-		mallardDuck.quack();
+		//mallardDuck.quack();
 		mallardDuck.swim();
 		mallardDuck.display();
 		
 		System.out.println("");
 		
 		Duck redheadDuck = new RedheadDuck();
-		redheadDuck.quack();
+		//redheadDuck.quack();
 		redheadDuck.swim();
 		redheadDuck.display();
 	}

@@ -9,7 +9,7 @@ public class FlyingDuckTester {
 	@Test
 	public void testRubberDuck(){
 		Duck duck =  new RubberDuck();
-		duck.fly();
+		//duck.fly();
 		
 		if(duck.isFlying()){
 			fail("Rubber ducks can't fly!!");
