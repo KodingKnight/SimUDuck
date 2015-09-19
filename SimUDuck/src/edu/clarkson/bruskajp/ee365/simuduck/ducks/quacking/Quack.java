@@ -4,7 +4,7 @@ public class Quack implements QuackBehavior{
 
 	@Override
 	public void quack() {
-		System.out.println("QUAAAACK!");
+		System.out.println("Quack");
 	}
 
 }
