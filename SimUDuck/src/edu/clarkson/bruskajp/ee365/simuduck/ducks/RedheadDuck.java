@@ -1,19 +1,19 @@
 package edu.clarkson.bruskajp.ee365.simuduck.ducks;
 
-public class RedheadDuck extends Duck implements Flyable, Quackable{
+import edu.clarkson.bruskajp.ee365.simuduck.ducks.flying.FlyWithWings;
+import edu.clarkson.bruskajp.ee365.simuduck.ducks.quacking.Quack;
+
+public class RedheadDuck extends Duck{
+	
+	public RedheadDuck() {
+		super();
+		quackBehavior =  new Quack();
+		flyBehavior = new FlyWithWings();
+	}
 	
 	@Override
 	public void display(){
 		System.out.println("I am a Redhead Duck!");
 	}
-	
-	public void fly(){
-		System.out.println("I am flying!");
-		this.setFlying(true);
-	}
-	
-	public void quack(){
-		System.out.println("QUAAAACK!");
-	}
-	
+
 }
